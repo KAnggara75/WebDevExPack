@@ -1,15 +1,52 @@
 {
-    "name": "php-webdev-expack",
-    "displayName": "02. WebDev Extension Pack",
-    "description": "Extension Packs for Web Development by KAnggara75",
-    "version": "0.0.1",
-    "engines": {
-        "vscode": "^1.65.0"
-    },
-    "categories": [
-        "Extension Packs"
-    ],
-    "extensionPack": [ 
-        "publisher.extensionName"
-    ]
+	"name": "php-webdev-expack",
+	"displayName": "02. WebDev Extension Pack",
+	"description": "Extension Packs for Web Development by KAnggara75",
+	"publisher": "KAnggara75",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.65.0"
+	},
+	"icon": "logo.png",
+	"categories": [
+		"Extension Packs"
+	],
+	"keywords": [
+		"web",
+		"mobile",
+		"desktop"
+	],
+	"extensionPack": [
+		"small.php-ci",
+		"HookyQR.beautify",
+		"csstools.postcss",
+		"mikestead.dotenv",
+		"ms-vscode.live-server",
+		"onecentlin.laravel-blade",
+		"bradlc.vscode-tailwindcss",
+		"ryannaddy.laravel-artisan",
+		"codingyu.laravel-goto-view",
+		"shufo.vscode-blade-formatter",
+		"IHunte.laravel-blade-wrapper",
+		"glitchbl.laravel-create-view",
+		"thekalinga.bootstrap4-vscode",
+		"onecentlin.laravel5-snippets",
+		"formulahendry.auto-close-tag",
+		"formulahendry.auto-rename-tag",
+		"naoray.laravel-goto-components",
+		"onecentlin.laravel-extension-pack",
+		"bmewburn.vscode-intelephense-client",
+		"amiralizadeh9480.laravel-extra-intellisense"
+	],
+	"scripts": {
+		"deploy": "vsce publish --yarn",
+		"test": "ls -l && echo \"OK\" && exit 0"
+	},
+	"repository": {
+		"url": "https://github.com/kanggara75/WebDevExPack"
+	},
+	"homepage": "https://github.com/kanggara75/WebDevExPack",
+	"bugs": {
+		"url": "https://github.com/kanggara75/WebDevExPack/issues"
+	}
 }
